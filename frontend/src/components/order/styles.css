@@ -1,0 +1,341 @@
+.orderContainer {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  height: 100vh;
+  background-color: #fdfdfb;
+  box-sizing: border-box;
+  padding-left: 3vw;
+}
+
+.orderContainerClose {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  height: 100vh;
+  background-color: #fdfdfb;
+  box-sizing: border-box;
+  padding-left: 3vw;
+}
+
+.orderHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 10vh;
+}
+
+.orderHeader img {
+  height: calc(0.8rem + 0.8vw);
+  margin-right: 2vw;
+  cursor: pointer;
+}
+
+.orderHeader div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(1rem + 1vw);
+  width: calc(1rem + 1vw);
+  background-color: #fcd661;
+  margin-right: 4vw;
+  border-radius: 10px;
+}
+
+.orderHeader div p {
+  font-size: calc(0.5rem + 0.3vw);
+  font-weight: 700;
+  margin: 0px;
+}
+
+.orderText {
+  font-size: calc(0.9rem + 0.9vw);
+  margin: 0px;
+}
+
+.orderText img {
+  height: calc(0.8rem + 0.8vw);
+  width: calc(0.8rem + 0.8vw);
+}
+
+.deliveryInfo {
+  display: flex;
+  width: 90%;
+  margin-right: 10%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #503e9d;
+  padding: 1vw;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin-top: 5vh;
+  margin: 5vh 0px 5vh 0px;
+}
+
+.directionInfo, .timeInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1.5vh 0vh;
+}
+
+.directionInfo input {
+  background-color: #503e9d;
+  border: none;
+  color: white;
+  width: 65%;
+  font-weight: 500;
+  font-size: calc(0.5rem + 0.5vw);
+}
+
+.directionInfo input::placeholder {
+  color: rgb(179, 179, 179);
+}
+
+.directionInfo button, .timeInfo button {
+  background-color: #503e9d;
+  color: #ffdb81;
+  font-weight: 600;
+  border: none;
+}
+
+.timeInfo div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 1vw;
+}
+
+.timeInfo div p {
+  color: white;
+  margin: 0px;
+}
+
+.infoTimeIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #614c97;
+  width: calc(1.5rem + 1vw);
+  height: calc(1.5rem + 1vw);
+  border-radius: 10px;
+}
+
+.infoTimeIcon img {
+  height: calc(0.7rem + 0.7vw);
+  width: calc(0.7rem + 0.7vw);
+}
+
+.carContentContainer {
+  display: flex;
+  flex-direction: column;
+  height: 35vh;
+  overflow-y: auto;
+}
+
+.carContentItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10%;
+  margin-bottom: 4vh;
+  cursor: pointer;
+}
+
+.carContentItem img, .carContentItem div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: calc(5vh);
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.carContentItem div img {
+  width: 90% !important;
+}
+
+.carContentAmount {
+  width: 15%;
+  font-size: calc(0.5rem + 0.5vw);
+  font-weight: 700;
+  margin-left: 5%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.carContentName {
+  width: 33%;
+  font-size: calc(0.5rem + 0.5vw);
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.carContentPrice {
+  width: 20%;
+  color: #b6b7b4;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.carTotalPrice {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px #d7d8d6 solid;
+  padding-bottom: 2vh;
+}
+
+.carTotalPrice h3 {
+  font-size: calc(0.5rem + 1vw);
+  font-weight: 500;
+  margin: 0px
+}
+
+.carTotalPrice h2 {
+  font-size: calc(1rem + 1vw);
+  font-weight: 700;
+  margin: 0px 10% 0px 0px;
+}
+
+.carCheckout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2vh;
+}
+
+.counterPersons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 35%;
+}
+
+.counterPersons p {
+  font-size: calc(0.5rem + 0.5vw);
+  font-weight: 500;
+  margin: 0px 0px 1vh 0vh;
+}
+
+.counterPersons div {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  border: 1px solid #e2e3e0;
+  border-radius: 10px;
+}
+
+.counterPersons div input {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  text-align: center;
+  font-weight: 700;
+  border: none;
+}
+
+.counterPersons div button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  text-align: center;
+  font-weight: 500;
+  border: none;
+  font-size: calc(0.8rem + 0.8vw);
+  border-radius: 10px;
+  background-color: white;
+}
+
+.checkoutButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  border-radius: 20px 0px 0px 20px;
+  border: none;
+  font-size: calc(0.5rem + 0.5vw);
+  background-color: #fcd661;
+  font-weight: 700;
+  padding: 3vh;
+}
+
+.checkoutButton img {
+  margin-left: 1.5vw;
+  height: calc(0.5rem + 0.5vw);
+  width: calc(0.5rem + 0.5vw);
+}
+
+.leftArrow {
+  display: none;
+  visibility: hidden;
+}
+
+@media (max-width: 800px), (orientation: portrait) {
+  .orderContainerClose {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    display: none;
+    visibility: hidden;
+  }
+  .orderContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    height: 100vh;
+    background-color: #fdfdfb;
+    box-sizing: border-box;
+    padding-left: 3vw;
+    right: 0;
+  }
+  .rightArrow {
+    position: absolute;
+    top: 50%;
+    left: 0vw;
+    width: 5vw;
+    height: 5vw;
+    display: block;
+    visibility: visible;
+    position: absolute;
+    border-left: 1vw solid #fcd661;
+    border-bottom: 1vw solid #fcd661;
+    transform: rotate( -135deg);
+    transition: all 0.25s ease;
+    z-index: 9;
+  }
+  .leftArrow {
+    position: absolute;
+    visibility: visible !important;
+    top: 50%;
+    right: 0vw;
+    width: 5vw;
+    height: 5vw;
+    display: block !important;
+    visibility: visible;
+    position: absolute;
+    border-left: 1vw solid #fcd661;
+    border-bottom: 1vw solid #fcd661;
+    transform: rotate( 45deg);
+    transition: all 0.25s ease;
+    z-index: 9;
+  }
+}
